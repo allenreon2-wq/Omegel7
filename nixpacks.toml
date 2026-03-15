@@ -1,28 +1,21 @@
 [phases.setup]
-nixPkgs = ["python311", "gcc"]
+nixPkgs = ["python311"]
 
 [start]
 cmd = "python bot.py"
 ```
-
-**Commit karo** ✅
-
----
-
-Saath mein `requirements.txt` bhi update karo — file open karo → **pencil icon** → content change karo:
-```
-pyrogram==2.0.106
-TgCrypto==1.2.5
-aiosqlite==0.19.0
-python-dotenv==1.0.1
-```
-
-Commit karo ✅
+Commit ✅
 
 ---
 
-Railway automatically redeploy karega. Is baar logs mein yeh dikhega:
+## ✅ Fix 3 — Railway mein manually redeploy karo
+
+Railway → apni service → **"Deployments"** tab → upar **"···"** (3 dots) → **"Redeploy"**
+
+---
+
+## ✅ Fix 4 — Agar phir bhi na ho, Railway mein variable add karo
+
+Railway → **Variables** tab → yeh add karo:
 ```
-✅ Database connected
-🚀 Starting bot...
-✅ Bot started as @Omegel_Unknown_Chats7_Bot
+NIXPACKS_PYTHON_VERSION = 3.11.8
