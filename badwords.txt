@@ -1,0 +1,12 @@
+# Add one bad word per line (lowercase).
+# The bot will auto-block messages containing these words.
+spam
+scam
+nude
+porn
+xxx
+fuck
+shit
+bitch
+asshole
+bastard

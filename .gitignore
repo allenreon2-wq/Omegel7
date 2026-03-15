@@ -1,0 +1,41 @@
+# ============================================================
+#  .gitignore — Anonymous Chat Bot
+# ============================================================
+
+# ── SECRET — never commit this ──────────────────────────────
+.env
+
+# ── Python cache ────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ─────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Pyrogram session files (contain auth credentials) ───────
+*.session
+*.session-journal
+
+# ── Database (optional — remove if you want to track schema) ─
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# ── Logs ─────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── OS / editor clutter ──────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
